@@ -10,7 +10,8 @@ const forecast =(lat,long,callback)=>{
     } else{
         callback(undefined,body.current.weather_descriptions[0]+
             '. It is currenty '+body.current.temperature+
-            ' degree and feels like '+body.current.feelslike
+            ' degree. However, it feels like '+body.current.feelslike+
+            ' degree. Have a Wonderful Day!!' 
         )
     }      
 })
